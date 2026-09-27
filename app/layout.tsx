@@ -7,6 +7,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
 import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/CustomCursor";
+import GlobalNeon from "@/components/GlobalNeon";
 import { site } from "@/data/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-[#050505] text-neutral-100 antialiased md:cursor-none">
         <SmoothScroll>
+          <GlobalNeon />
           <CustomCursor />
           <Navbar />
           <main className="min-h-screen">{children}</main>

@@ -85,3 +85,160 @@ h1, h2, h3, h4, h5, h6, .font-display {
     cursor: none !important;
   }
 }
+/* Neon light sweep across screen */
+@keyframes neon-sweep {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+    opacity: 0;
+  }
+}
+
+.animate-neon-sweep {
+  animation: neon-sweep 6s ease-in-out infinite;
+}
+
+.animate-neon-sweep-slow {
+  animation: neon-sweep 9s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Film flash effect */
+@keyframes film-flash {
+  0%, 90%, 100% { opacity: 0; }
+  92%, 96% { opacity: 0.15; }
+  94%, 98% { opacity: 0; }
+}
+
+.animate-film-flash {
+  animation: film-flash 8s ease-in-out infinite;
+}
+
+/* Scan line — editor timeline feel */
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.animate-scan-line {
+  animation: scan-line 8s linear infinite;
+}/* Reverse direction sweep (right to left) */
+@keyframes neon-sweep-reverse {
+  0% {
+    transform: translateX(200%) skewX(15deg);
+    opacity: 0;
+  }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% {
+    transform: translateX(-100%) skewX(15deg);
+    opacity: 0;
+  }
+}
+
+.animate-neon-sweep-reverse {
+  animation: neon-sweep-reverse 8s ease-in-out infinite;
+  animation-delay: 3s;
+}
+/* === Aura Light Effects === */
+
+/* Orb 1 — big slow organic movement */
+@keyframes aura-orb-1 {
+  0%, 100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translate(15%, -10%) scale(1.2);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-10%, 15%) scale(0.9);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translate(20%, 5%) scale(1.1);
+    opacity: 0.85;
+  }
+}
+
+/* Orb 2 — different path */
+@keyframes aura-orb-2 {
+  0%, 100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.5;
+  }
+  33% {
+    transform: translate(-20%, 10%) scale(1.15);
+    opacity: 0.8;
+  }
+  66% {
+    transform: translate(15%, -15%) scale(0.95);
+    opacity: 0.65;
+  }
+}
+
+/* Orb 3 — fastest */
+@keyframes aura-orb-3 {
+  0%, 100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(-15%, -20%) scale(1.25);
+    opacity: 0.7;
+  }
+}
+
+/* Color shifting glow */
+@keyframes aura-color-shift {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(30deg);
+  }
+}
+
+/* Breathing effect */
+@keyframes aura-breathe {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+.aura-orb-1 {
+  animation: aura-orb-1 18s ease-in-out infinite;
+}
+
+.aura-orb-2 {
+  animation: aura-orb-2 22s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.aura-orb-3 {
+  animation: aura-orb-3 14s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+.aura-breathe {
+  animation: aura-breathe 8s ease-in-out infinite;
+}
+
+.aura-color {
+  animation: aura-color-shift 20s ease-in-out infinite;
+}
