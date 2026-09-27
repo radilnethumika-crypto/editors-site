@@ -18,7 +18,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-xl bg-black/50 border-b border-white/5">
+    <header className="sticky top-0 z-50 bg-gradient-to-b from-black/40 to-transparent">
       <nav className="max-w-6xl mx-auto flex items-center justify-between p-4">
         <Link href="/" className="font-bold text-lg flex items-center gap-2 group">
           <span className="w-8 h-8 rounded-full bg-gradient-to-br from-red-500 to-purple-600 flex items-center justify-center text-sm group-hover:scale-110 transition">
@@ -36,7 +36,7 @@ export default function Navbar() {
                   href={l.href} 
                   className={`px-4 py-2 text-sm rounded-full transition ${
                     active 
-                      ? "bg-white text-black font-medium" 
+                      ? "bg-white/10 text-white font-medium backdrop-blur-xl border border-white/10"
                       : "text-neutral-400 hover:text-white"
                   }`}
                 >
