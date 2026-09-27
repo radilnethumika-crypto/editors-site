@@ -17,7 +17,16 @@ const item = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden flex items-center justify-center pt-20 pb-32">
-      
+            {/* Background Image */}
+      <div className="absolute inset-0 -z-30">
+        <img
+          src="/hero-bg.jpg"
+          alt="Cinematic background"
+          className="w-full h-full object-cover opacity-1000"
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/70 via-[#050505]/50 to-[#050505]" />
+      </div>
       {/* === BACKGROUND EFFECTS === */}
       {/* Deep red/purple glow behind everything */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-600/20 rounded-full blur-[150px] pointer-events-none -z-20" />
