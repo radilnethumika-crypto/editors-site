@@ -3,6 +3,7 @@ import WorkGrid from "@/components/WorkGrid";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialsSlider from "@/components/TestimonialsSlider";
 import FadeIn from "@/components/FadeIn";
+import NeonBackground from "@/components/NeonBackground";
 import { site } from "@/data/site";
 import { services } from "@/data/services";
 import Link from "next/link";
@@ -14,7 +15,8 @@ export default function Home() {
       <Hero />
 
       {/* Showreel */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
+      <section className="relative max-w-5xl mx-auto px-6 py-20">
+        <NeonBackground variant="red" />
         <FadeIn>
           <div className="text-center mb-10">
             <p className="text-red-500 text-sm font-medium uppercase tracking-widest mb-3">Showreel</p>
@@ -29,7 +31,8 @@ export default function Home() {
       </section>
 
       {/* Featured Work */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="relative max-w-6xl mx-auto px-6 py-20">
+        <NeonBackground variant="mixed" />
         <FadeIn>
           <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
             <div>
@@ -47,7 +50,8 @@ export default function Home() {
       </section>
 
       {/* Services preview */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="relative max-w-6xl mx-auto px-6 py-20">
+        <NeonBackground variant="mixed-reverse" />
         <FadeIn>
           <div className="text-center mb-12">
             <p className="text-red-500 text-sm font-medium uppercase tracking-widest mb-3">Pricing</p>
@@ -72,7 +76,8 @@ export default function Home() {
       </section>
 
       {/* Testimonials Slider */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="relative max-w-6xl mx-auto px-6 py-20">
+        <NeonBackground variant="purple" />
         <FadeIn>
           <div className="text-center mb-12">
             <p className="text-red-500 text-sm font-medium uppercase tracking-widest mb-3">Testimonials</p>
@@ -85,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* Big CTA */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="relative max-w-6xl mx-auto px-6 py-20">
         <FadeIn>
           <div className="relative overflow-hidden rounded-3xl border border-white/10 p-12 md:p-20 text-center">
             <div className="absolute inset-0 -z-10">
