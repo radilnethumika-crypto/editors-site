@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16 relative">
         {/* Big CTA text */}
         <div className="mb-16">
-          <p className="text-neutral-500 text-sm uppercase tracking-widest mb-3">Let's work together</p>
+          <p className="text-neutral-500 text-sm uppercase tracking-widest mb-3">Let&apos;s work together</p>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-none">
             Have an idea?<br />
             <a href={`mailto:${site.email}`} className="gradient-text hover:opacity-80 transition inline-flex items-center gap-2">

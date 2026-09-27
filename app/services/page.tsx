@@ -61,7 +61,7 @@ export default function Services() {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight">How it works</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {steps.map((s, i) => (
+          {steps.map((s) => (
             <div key={s.title} className="glass rounded-2xl p-6 relative hover:border-white/20 transition">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500 to-purple-600 flex items-center justify-center mb-4 shadow-lg shadow-red-500/30">
                 <s.icon className="w-5 h-5 text-white" />
@@ -99,7 +99,7 @@ export default function Services() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-600/30 rounded-full blur-[120px] animate-aurora" />
           </div>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-2xl mx-auto leading-tight">
-            Not sure which package fits? <span className="gradient-text">Let's chat.</span>
+            Not sure which package fits? <span className="gradient-text">Let&apos;s chat.</span>
           </h2>
           <Link href="/contact" className="mt-10 inline-flex items-center gap-2 bg-white text-black hover:bg-red-500 hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-2xl">
             Get a free quote <ArrowRight className="w-4 h-4" />

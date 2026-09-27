@@ -93,7 +93,7 @@ export default function Home() {
               <div className="absolute inset-0 grid-pattern opacity-50" />
             </div>
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-2xl mx-auto leading-tight font-display">
-              Have a project in mind? <span className="gradient-text">Let's make it happen.</span>
+              Have a project in mind? <span className="gradient-text">Let&apos;s make it happen.</span>
             </h2>
             <p className="text-neutral-400 mt-6 max-w-md mx-auto">Get in touch for a free quote. I usually reply within a few hours.</p>
             <Link

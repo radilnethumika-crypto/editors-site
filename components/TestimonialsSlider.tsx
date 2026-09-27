@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
@@ -33,7 +33,7 @@ export default function TestimonialsSlider() {
             transition={{ duration: 0.4 }}
           >
             <p className="text-xl md:text-2xl leading-relaxed text-neutral-200 font-medium">
-              "{current.text}"
+              &ldquo;{current.text}&rdquo;
             </p>
 
             <div className="mt-8 flex items-center gap-4">

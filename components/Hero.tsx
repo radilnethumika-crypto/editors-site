@@ -126,7 +126,7 @@ export default function Hero() {
 
         {/* Description */}
         <motion.p variants={item} className="mt-10 text-neutral-400 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
-          I'm <span className="text-white font-semibold">{site.name}</span> — a {site.role.toLowerCase()} helping creators & brands turn raw footage into scroll-stopping visuals.
+          I&apos;m <span className="text-white font-semibold">{site.name}</span> — a {site.role.toLowerCase()} helping creators & brands turn raw footage into scroll-stopping visuals.
         </motion.p>
 
       </motion.div>
